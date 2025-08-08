@@ -17,6 +17,8 @@ export default function SocialLinks() {
             <Link
               href={href}
               aria-label={label}
+              target="_blank"
+              rel="noreferrer noopener"
           className="group inline-flex items-center gap-2 rounded-md border border-neutral-800 bg-neutral-900/60 px-3 py-1.5 text-sm text-neutral-200 transition-all duration-200 hover:border-sky-500/40 hover:bg-neutral-900 hover:text-sky-300 hover:shadow-[0_0_0_1px_rgba(14,165,233,0.15)]"
             >
               <Icon className="h-4 w-4 transition-transform duration-200 group-hover:-translate-y-0.5" />
