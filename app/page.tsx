@@ -13,7 +13,7 @@ export default function Page() {
       {/* Decorative subtle vignette */}
       <div
         aria-hidden="true"
-        className="pointer-events-none fixed inset-0 bg-[radial-gradient(60%_40%_at_50%_0%,rgba(16,185,129,0.10),transparent_60%)]"
+        className="pointer-events-none fixed inset-0 bg-[radial-gradient(60%_40%_at_50%_0%,rgba(14,165,233,0.10),transparent_60%)]"
       />
       <TopBar />
 
@@ -40,7 +40,7 @@ export default function Page() {
 
       <footer className="py-10 text-center text-sm text-neutral-400">
         <p className="transition-opacity duration-200 hover:opacity-80">
-          {"© "}Placeholder Name · {"All placeholder content"}
+          {"© "}2025 Chitransh. Built with ☕ and code.
         </p>
       </footer>
     </main>

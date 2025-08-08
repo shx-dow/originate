@@ -19,7 +19,7 @@ export default function Skills() {
       <div className="grid gap-3">
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="languages" className="border-neutral-800">
-            <AccordionTrigger className="text-neutral-200 hover:text-emerald-300">
+            <AccordionTrigger className="text-neutral-200 hover:text-sky-300">
               Languages
             </AccordionTrigger>
             <AccordionContent>
@@ -51,7 +51,7 @@ export default function Skills() {
         </Accordion>
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="frameworks" className="border-neutral-800">
-            <AccordionTrigger className="text-neutral-200 hover:text-emerald-300">
+            <AccordionTrigger className="text-neutral-200 hover:text-sky-300">
               Frameworks / Libraries
             </AccordionTrigger>
             <AccordionContent>
@@ -80,7 +80,7 @@ export default function Skills() {
         </Accordion>
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="tools" className="border-neutral-800">
-            <AccordionTrigger className="text-neutral-200 hover:text-emerald-300">
+            <AccordionTrigger className="text-neutral-200 hover:text-sky-300">
               Tools
             </AccordionTrigger>
             <AccordionContent>

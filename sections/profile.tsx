@@ -5,11 +5,11 @@ export default function Profile() {
     <section aria-labelledby="profile-heading" className="flex items-center gap-6">
       <div className="relative">
         <Image
-          src="/placeholder.svg?height=160&width=160"
+          src="/profile.jpeg"
           alt="profile picture"
           width={96}
           height={96}
-          className="h-24 w-24 rounded-xl ring-1 ring-neutral-800 object-cover transition-transform duration-300 hover:-translate-y-0.5"
+          className="h-22 w-22 rounded-full"
           priority
         />
       </div>

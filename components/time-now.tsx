@@ -15,7 +15,7 @@ export default function TimeNow() {
   return (
     <time
       aria-live="polite"
-      className="font-medium text-neutral-200 transition-colors duration-200 hover:text-emerald-300"
+      className="font-medium text-neutral-200 transition-colors duration-200 hover:text-sky-300"
       suppressHydrationWarning
     >
       {now}

@@ -125,6 +125,11 @@
     -webkit-font-smoothing: antialiased;
     font-synthesis-weight: none;
   }
+  /* Complementary selection color (blue theme) */
+  ::selection {
+    background-color: rgb(14 165 233 / 0.25); /* sky-500/25 */
+    color: rgb(224 242 254); /* sky-100 */
+  }
   h1, h2, h3, h4, h5, h6,
   code, pre, kbd, samp {
     font-family: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco,
