@@ -6,7 +6,7 @@ export default function Profile() {
       <div className="relative">
         <Image
           src="/placeholder.svg?height=160&width=160"
-          alt="Placeholder profile picture"
+          alt="profile picture"
           width={96}
           height={96}
           className="h-24 w-24 rounded-xl ring-1 ring-neutral-800 object-cover transition-transform duration-300 hover:-translate-y-0.5"
@@ -15,12 +15,9 @@ export default function Profile() {
       </div>
       <div className="min-w-0">
         <h1 id="profile-heading" className="text-xl sm:text-2xl font-bold text-neutral-50">
-          Placeholder Name
+          Chitransh
         </h1>
-        <p className="mt-1 text-neutral-400">@username</p>
-        <p className="mt-3 text-sm text-neutral-300 leading-relaxed">
-          Short placeholder tagline goes here. Keep it concise and impactful.
-        </p>
+        <p className="mt-1 text-neutral-400">@_chitransh09</p>
       </div>
     </section>
   )

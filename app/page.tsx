@@ -6,11 +6,10 @@ import Profile from "@/sections/profile"
 import About from "@/sections/about"
 import Skills from "@/sections/skills"
 import Projects from "@/sections/projects"
-import { mono } from "@/lib/fonts"
 
 export default function Page() {
   return (
-    <main className={`${mono.className} antialiased bg-neutral-950 text-neutral-100 min-h-[100dvh]`}>
+    <main className="antialiased bg-neutral-950 text-neutral-100 min-h-[100dvh]">
       {/* Decorative subtle vignette */}
       <div
         aria-hidden="true"
@@ -21,16 +20,13 @@ export default function Page() {
       <div className="relative">
         <div className="mx-auto w-full max-w-3xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
           <Profile />
-
-          <Separator className="my-10 bg-neutral-800" />
-
+          <br />
           <About />
 
           <Separator className="my-10 bg-neutral-800" />
 
           <Skills />
 
-          {/* Optional extra section */}
           <Separator className="my-10 bg-neutral-800" />
 
           <Projects />
