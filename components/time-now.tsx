@@ -18,7 +18,7 @@ export default function TimeNow() {
       className="font-medium text-neutral-200 transition-colors duration-200 hover:text-sky-300"
       suppressHydrationWarning
     >
-      {now}
+      {"IN "}{now}
     </time>
   )
 }

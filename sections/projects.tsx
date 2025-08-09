@@ -13,11 +13,11 @@ export default function Projects() {
         <Link
           href="/projects/afpms-web-tools"
           aria-label="Open project: AFPMS Web Tools"
-          className="rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          className="block h-full rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
         >
-          <Card className="border-neutral-800 bg-neutral-950/50 transition-transform duration-300 hover:-translate-y-0.5">
+          <Card className="h-full border-neutral-800 bg-neutral-950/50 transition-transform duration-300 hover:-translate-y-0.5">
             <CardHeader>
-              <CardTitle className="text-neutral-100">AFPMS Web Tools</CardTitle>
+              <CardTitle className="text-neutral-100 line-clamp-1">AFPMS Web Tools</CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
               <Image
@@ -27,7 +27,7 @@ export default function Projects() {
                 height={480}
                 className="w-full h-36 object-cover rounded-md ring-1 ring-neutral-800"
               />
-              <p className="text-sm text-neutral-300">
+              <p className="text-sm text-neutral-400 line-clamp-3">
                 A web-based task and enquiry management suite built with ASP.NET Core to streamline workflows and boost collaboration.
               </p>
             </CardContent>
@@ -37,13 +37,13 @@ export default function Projects() {
         <Link
           href="https://github.com/shx-dow/fluke"
           aria-label="Open project: Fluke - A Text Editor"
-          className="rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          className="block h-full rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           target="_blank"
           rel="noreferrer noopener"
         >
-          <Card className="border-neutral-800 bg-neutral-950/50 transition-transform duration-300 hover:-translate-y-0.5">
+          <Card className="h-full border-neutral-800 bg-neutral-950/50 transition-transform duration-300 hover:-translate-y-0.5">
             <CardHeader>
-              <CardTitle className="text-neutral-100">Fluke - A Text Editor</CardTitle>
+              <CardTitle className="text-neutral-100 line-clamp-1">Fluke - A Text Editor</CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
               <Image
@@ -53,7 +53,7 @@ export default function Projects() {
                 height={480}
                 className="w-full h-36 object-cover rounded-md ring-1 ring-neutral-800"
               />
-              <p className="text-sm text-neutral-300">
+              <p className="text-sm text-neutral-400 line-clamp-3">
                 A minimal, terminal-based text editor in C. Fast, simple, and inspired by kilo.
               </p>
             </CardContent>
