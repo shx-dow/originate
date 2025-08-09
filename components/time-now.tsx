@@ -1,9 +1,14 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect, useLayoutEffect, useState } from "react"
 
 export default function TimeNow() {
-  const [now, setNow] = useState<string>(() => formatTime(new Date()))
+  const [now, setNow] = useState<string | null>(null)
+
+  // Ensure the correct IST value is set before the first paint
+  useLayoutEffect(() => {
+    setNow(formatTime(new Date()))
+  }, [])
 
   useEffect(() => {
     // Align updates to the next minute boundary to avoid unnecessary per-second updates
@@ -34,11 +39,11 @@ export default function TimeNow() {
   return (
     <time
       aria-live="polite"
-      className="font-medium text-neutral-200 transition-colors duration-200 hover:text-sky-300"
+      className="font-normal text-neutral-200 transition-colors duration-200 hover:text-sky-300"
       suppressHydrationWarning
       title="India Standard Time (IST)"
     >
-      {"IN "}{now}
+      {"IN "}{now ?? ""}
     </time>
   )
 }
