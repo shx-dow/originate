@@ -6,10 +6,29 @@ export default function TimeNow() {
   const [now, setNow] = useState<string>(() => formatTime(new Date()))
 
   useEffect(() => {
-    const id = setInterval(() => {
-      setNow(formatTime(new Date()))
-    }, 1000)
-    return () => clearInterval(id)
+    // Align updates to the next minute boundary to avoid unnecessary per-second updates
+    const scheduleNextTick = () => {
+      const current = new Date()
+      const msUntilNextMinute =
+        (60 - current.getSeconds()) * 1000 - current.getMilliseconds()
+
+      const timeoutId = setTimeout(() => {
+        setNow(formatTime(new Date()))
+        intervalId = setInterval(() => {
+          setNow(formatTime(new Date()))
+        }, 60_000)
+      }, Math.max(0, msUntilNextMinute))
+
+      return timeoutId
+    }
+
+    let intervalId: ReturnType<typeof setInterval> | null = null
+    const timeoutId = scheduleNextTick()
+
+    return () => {
+      clearTimeout(timeoutId)
+      if (intervalId) clearInterval(intervalId)
+    }
   }, [])
 
   return (
@@ -17,6 +36,7 @@ export default function TimeNow() {
       aria-live="polite"
       className="font-medium text-neutral-200 transition-colors duration-200 hover:text-sky-300"
       suppressHydrationWarning
+      title="India Standard Time (IST)"
     >
       {"IN "}{now}
     </time>
@@ -25,10 +45,11 @@ export default function TimeNow() {
 
 function formatTime(d: Date) {
   try {
-    return new Intl.DateTimeFormat(undefined, {
+    return new Intl.DateTimeFormat("en-IN", {
       hour: "2-digit",
       minute: "2-digit",
       hour12: false,
+      timeZone: "Asia/Kolkata",
     }).format(d)
   } catch {
     return d.toLocaleTimeString()
