@@ -6,18 +6,18 @@ import Profile from "@/sections/profile"
 import About from "@/sections/about"
 import Skills from "@/sections/skills"
 import Projects from "@/sections/projects"
+import Background from "@/components/background"
 
 export default function Page() {
   return (
-    <main className="antialiased bg-neutral-950 text-neutral-100 min-h-[100dvh]">
-      {/* Decorative subtle vignette */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none fixed inset-0 bg-[radial-gradient(60%_40%_at_50%_0%,rgba(14,165,233,0.10),transparent_60%)]"
-      />
-      <TopBar />
+    <main className="antialiased bg-neutral-950 text-neutral-100 min-h-[100dvh] relative">
+      <Background />
 
-      <div className="relative">
+      <div className="relative z-20">
+        <TopBar />
+      </div>
+
+      <div className="relative z-20">
         <div className="mx-auto w-full max-w-3xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
           <Profile />
           <br />
@@ -38,7 +38,7 @@ export default function Page() {
         </div>
       </div>
 
-      <footer className="py-10 text-center text-sm text-neutral-400">
+      <footer className="relative z-20 py-10 text-center text-sm text-neutral-400">
         <p className="transition-opacity duration-200 hover:opacity-80">
           {"© "}2025 Chitransh. Built with ☕ and code.
         </p>

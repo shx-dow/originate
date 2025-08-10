@@ -5,13 +5,11 @@ import { useEffect, useLayoutEffect, useState } from "react"
 export default function TimeNow() {
   const [now, setNow] = useState<string | null>(null)
 
-  // Ensure the correct IST value is set before the first paint
   useLayoutEffect(() => {
     setNow(formatTime(new Date()))
   }, [])
 
   useEffect(() => {
-    // Align updates to the next minute boundary to avoid unnecessary per-second updates
     const scheduleNextTick = () => {
       const current = new Date()
       const msUntilNextMinute =
