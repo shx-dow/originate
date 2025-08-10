@@ -1,11 +1,11 @@
 import Link from "next/link"
-import { Mail, Twitter, Github, Linkedin, LinkIcon } from 'lucide-react'
+import { RiMailLine, RiTwitterXLine, RiGithubLine, RiLinkedinLine } from '@remixicon/react'
 
 const socials = [
-  { href: "mailto:chitransh.sharma1477@gmail.com", label: "Email", Icon: Mail },
-  { href: "https://x.com/_chitransh09", label: "Twitter", Icon: Twitter },
-  { href: "https://github.com/shx-dow", label: "GitHub", Icon: Github },
-  { href: "https://www.linkedin.com/in/chitransh-sharma-130313308/", label: "LinkedIn", Icon: Linkedin },
+  { href: "mailto:chitransh.sharma1477@gmail.com", label: "Email", Icon: RiMailLine },
+  { href: "https://x.com/_chitransh09", label: "X (Twitter)", Icon: RiTwitterXLine },
+  { href: "https://github.com/shx-dow", label: "GitHub", Icon: RiGithubLine },
+  { href: "https://www.linkedin.com/in/chitransh-sharma-130313308/", label: "LinkedIn", Icon: RiLinkedinLine },
 ]
 
 export default function SocialLinks() {
