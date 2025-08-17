@@ -37,7 +37,7 @@ export default function TimeNow() {
   return (
     <time
       aria-live="polite"
-      className="font-normal text-neutral-200 transition-colors duration-200 hover:text-sky-300"
+      className="font-normal text-neutral-400 transition-opacity duration-200 hover:opacity-80"
       suppressHydrationWarning
       title="India Standard Time (IST)"
     >
