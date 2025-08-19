@@ -11,7 +11,7 @@ export default function Projects() {
 
       <div className="grid gap-4 sm:grid-cols-2">
         <Link
-          href="/projects/afpms-web-tools"
+          href="https://github.com/shx-dow/AFPMS-Web-Tools"
           aria-label="Open project: AFPMS Web Tools"
           className="block h-full rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
         >
