@@ -14,6 +14,8 @@ export default function Projects() {
           href="https://github.com/shx-dow/AFPMS-Web-Tools"
           aria-label="Open project: AFPMS Web Tools"
           className="block h-full rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          target="_blank"
+          rel="noreferrer noopener"
         >
           <Card className="h-full border-neutral-800 bg-neutral-950/50 transition-transform duration-300 hover:-translate-y-0.5">
             <CardHeader>
