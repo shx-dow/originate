@@ -23,8 +23,8 @@ export default function Projects() {
             </CardHeader>
             <CardContent className="space-y-3">
               <Image
-                src="/placeholder.svg?height=240&width=480"
-                alt="Placeholder project cover"
+                src="/afpms.png"
+                alt="afpms cover image"
                 width={960}
                 height={480}
                 className="w-full h-36 object-cover rounded-md ring-1 ring-neutral-800"
@@ -50,7 +50,7 @@ export default function Projects() {
             <CardContent className="space-y-3">
               <Image
                 src="/fluke.svg?height=240&width=480"
-                alt="Placeholder project cover"
+                alt="fluke cover image"
                 width={960}
                 height={480}
                 className="w-full h-36 object-cover rounded-md ring-1 ring-neutral-800"
