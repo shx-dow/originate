@@ -4,7 +4,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Chitransh',
-  icons: '/profile.jpeg'
+  icons: '/pfp.jpg'
 }
 
 const figtree = Figtree({ subsets: ['latin'], variable: '--font-sans', display: 'swap' })

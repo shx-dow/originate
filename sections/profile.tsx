@@ -5,7 +5,7 @@ export default function Profile() {
     <section aria-labelledby="profile-heading" className="flex items-center gap-6">
       <div className="relative">
         <Image
-          src="/profile.jpeg"
+          src="/pfp.jpg"
           alt="profile picture"
           width={96}
           height={96}
