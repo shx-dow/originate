@@ -7,6 +7,45 @@ import About from "@/sections/about"
 import Skills from "@/sections/skills"
 import Projects from "@/sections/projects"
 import Background from "@/components/background"
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Chitransh',
+  description: 'Welcome to Chitransh\'s portfolio. Full-stack developer passionate about creating innovative web applications with React, Next.js, Python, and modern technologies. Explore my projects, skills, and experience.',
+  keywords: [
+    'Chitransh Portfolio',
+    'Developer Portfolio',
+    'Full Stack Developer',
+    'React Developer',
+    'Next.js Developer',
+    'Python Developer',
+    'Web Development',
+    'Software Engineer',
+    'Portfolio Website',
+    'Developer Resume',
+    'Web Applications',
+    'Frontend Development',
+    'Backend Development',
+    'JavaScript',
+    'TypeScript',
+    'ASP.NET',
+    'Database Design',
+    'API Development'
+  ],
+  openGraph: {
+    title: 'Chitransh',
+    description: 'Welcome to Chitransh\'s portfolio. Full-stack developer passionate about creating innovative web applications with React, Next.js, Python, and modern technologies.',
+    url: 'https://chitransh.me',
+    type: 'website',
+  },
+  twitter: {
+    title: 'Chitransh',
+    description: 'Welcome to Chitransh\'s portfolio. Full-stack developer passionate about creating innovative web applications with React, Next.js, Python, and modern technologies.',
+  },
+  alternates: {
+    canonical: 'https://chitransh.me',
+  },
+}
 
 export default function Page() {
   return (

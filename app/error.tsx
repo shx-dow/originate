@@ -6,6 +6,25 @@ import { Separator } from "@/components/ui/separator"
 import TopBar from "@/components/topbar"
 import SocialLinks from "@/components/social-links"
 import Background from "@/components/background"
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: '500 - Internal Server Error',
+  description: 'Something went wrong on our end. The server encountered an unexpected condition and couldn\'t complete your request. This is definitely not your fault.',
+  robots: {
+    index: false,
+    follow: true,
+  },
+  openGraph: {
+    title: '500 - Internal Server Error | Chitransh',
+    description: 'Something went wrong on our end. The server encountered an unexpected condition and couldn\'t complete your request.',
+    type: 'website',
+  },
+  twitter: {
+    title: '500 - Internal Server Error | Chitransh',
+    description: 'Something went wrong on our end. The server encountered an unexpected condition and couldn\'t complete your request.',
+  },
+}
 
 export default function Error({
   error,

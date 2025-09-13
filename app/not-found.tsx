@@ -5,6 +5,25 @@ import { Separator } from "@/components/ui/separator"
 import TopBar from "@/components/topbar"
 import SocialLinks from "@/components/social-links"
 import Background from "@/components/background"
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: '404 - Page Not Found',
+  description: 'The page you\'re looking for seems to have vanished into the digital void. Don\'t worry, even the best developers lose things sometimes. Return to Chitransh\'s portfolio.',
+  robots: {
+    index: false,
+    follow: true,
+  },
+  openGraph: {
+    title: '404 - Page Not Found | Chitransh',
+    description: 'The page you\'re looking for seems to have vanished into the digital void. Return to Chitransh\'s portfolio.',
+    type: 'website',
+  },
+  twitter: {
+    title: '404 - Page Not Found | Chitransh',
+    description: 'The page you\'re looking for seems to have vanished into the digital void. Return to Chitransh\'s portfolio.',
+  },
+}
 
 export default function NotFound() {
   return (
