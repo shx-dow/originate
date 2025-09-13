@@ -7,6 +7,7 @@ import About from "@/sections/about"
 import Skills from "@/sections/skills"
 import Projects from "@/sections/projects"
 import Background from "@/components/background"
+import EasterEggNotification from "@/components/easter-egg-notification"
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -51,6 +52,7 @@ export default function Page() {
   return (
     <main className="antialiased bg-neutral-950 text-neutral-100 min-h-[100dvh] relative">
       <Background />
+      <EasterEggNotification />
 
       <div className="relative z-20">
         <TopBar />
@@ -80,6 +82,9 @@ export default function Page() {
       <footer className="relative z-20 py-10 text-center text-sm text-neutral-400">
         <p className="transition-opacity duration-200 hover:opacity-80">
           {"© "}2025 Chitransh. Built with ☕ and code.
+        </p>
+        <p className="text-xs text-neutral-500 mt-2 italic">
+          P.S. I'm a big fan of classic video games. Try the Konami code if you know what I mean!
         </p>
       </footer>
     </main>
